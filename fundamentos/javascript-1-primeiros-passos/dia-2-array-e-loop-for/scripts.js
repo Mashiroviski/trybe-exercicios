@@ -1,22 +1,37 @@
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let menuServices = menu[1];
+// let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+// let menuServices = menu[1];
 
-console.log(menuServices);
+// console.log(menuServices);
 
-let indexOfPortfolio = menu.indexOf('Portfólio');
+// let indexOfPortfolio = menu.indexOf('Portfólio');
 
-console.log(indexOfPortfolio);
+// console.log(indexOfPortfolio);
 
-menu.push('Contato')
+// menu.push('Contato')
 
-console.log(menu);
+// console.log(menu);
 
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
-for (let i = 0; i < groceryList.length; i += 1) {
-    console.log(groceryList[i])
+// let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+// for (let i = 0; i < groceryList.length; i += 1) {
+//     console.log(groceryList[i])
+// }
+
+// let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+// for (let n of names) {
+//     console.log(n)
+// }
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 0; index < numbers.length; index += 1) {
+    console.log(numbers[index])
 }
 
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for (let n of names) {
-    console.log(n)
-}
+let result = 0;
+for (let index = 0; index < numbers.length; index +=1) {
+    result += numbers[index]  
+}   console.log(result)
+
+let average = result / numbers.length
+console.log(average)
+
