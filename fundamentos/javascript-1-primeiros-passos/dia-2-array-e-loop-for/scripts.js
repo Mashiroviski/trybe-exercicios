@@ -41,15 +41,15 @@ if (average >= 20) {
     console.log('Valor menor ou igual a 20')
 }
 
-let highNum = 0
+let highNum = 0;
 for (let index = 0; index < numbers.length; index +=1) {
     if (numbers[index] > highNum) {
         highNum = numbers[index];
     }
 } console.log(highNum)
 
-let impar = 0
-let numImpar = []
+let impar = 0;
+let numImpar = [];
 for (let index = 0; index < numbers.length; index +=1) {
     if (numbers[index] % 2 === 1) {
         impar += 1;
@@ -63,3 +63,18 @@ if (impar === 0) {
     console.log(numImpar)
 } 
 
+let lowerNum = numbers[0];
+for (let index = 0; index < numbers.length; index +=1) {
+    if (numbers[index] < lowerNum) {
+        lowerNum = numbers[index]
+    }
+}   console.log(lowerNum)
+
+let oneToTtf = [];
+for (let index = 1; index <= 25; index +=1) {
+    oneToTtf.push(index) 
+} console.log(oneToTtf)
+
+for (let index = 0; index < oneToTtf.length; index +=1) {
+    console.log(oneToTtf[index] / 2)
+}
