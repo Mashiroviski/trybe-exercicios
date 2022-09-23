@@ -40,3 +40,26 @@ if (average >= 20) {
 } else {
     console.log('Valor menor ou igual a 20')
 }
+
+let highNum = 0
+for (let index = 0; index < numbers.length; index +=1) {
+    if (numbers[index] > highNum) {
+        highNum = numbers[index];
+    }
+} console.log(highNum)
+
+let impar = 0
+let numImpar = []
+for (let index = 0; index < numbers.length; index +=1) {
+    if (numbers[index] % 2 === 1) {
+        impar += 1;
+        numImpar.push(numbers[index]) 
+    }
+
+} 
+if (impar === 0) {
+    console.log('Nenhum número impar')
+} else { console.log(impar)
+    console.log(numImpar)
+} 
+
