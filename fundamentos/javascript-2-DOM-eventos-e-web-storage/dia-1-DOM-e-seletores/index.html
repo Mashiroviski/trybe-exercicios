@@ -70,7 +70,15 @@
         document.getElementsByTagName('h1')[0].innerText = text
     } fixTexth1('Exercício - JavaScript')
 
-    
+    function textTransformProp(value) {
+        document.getElementsByTagName('p')[0].style.textTransform = value
+    } textTransformProp('uppercase')
+
+    function showContent(tagArray) {
+        for (let index = 0; index < document.getElementsByTagName(tagArray).length; index += 1) {
+            console.log(document.getElementsByTagName(tagArray)[index])
+        }
+    } showContent('p')
     </script>
   </body>
 </html>
