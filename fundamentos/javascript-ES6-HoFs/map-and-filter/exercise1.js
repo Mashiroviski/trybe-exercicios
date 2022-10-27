@@ -206,5 +206,14 @@ return fantasyOrScienceFiction().map((book) => `${book.author.name}`).sort();
 const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-    books.filter((book) => book.author.name === )
+  return books.find((book) => book.author.name[1] === '.'
+  && book.author.name[4] === '.'
+  && book.author.name[7] === '.').name;
+  // const letters = books.map((book) => book.author.name.split(" ").filter((names) => names.endsWith('.')));
+  //   return letters.filter((initial) => initial.length === 3)
+  // console.log(letters);
+  // // return 
+  //   // books.filter((book) => book.author.name === )
 }
+
+console.log(authorWith3DotsOnName());
