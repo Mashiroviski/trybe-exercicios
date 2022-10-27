@@ -206,5 +206,5 @@ return fantasyOrScienceFiction().map((book) => `${book.author.name}`).sort();
 const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-  
+    books.filter((book) => book.author.name === )
 }
